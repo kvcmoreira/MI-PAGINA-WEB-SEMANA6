@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Beneficiarios de Plantas Frutales</title>
+  <style>
+    body {
+      background-color: #9dd9ff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0 20px;
+    }
+
+    h1 {
+      background-color: #b8e986;
+      color: #2c3e50;
+      text-align: center;
+      padding: 20px 0;
+      margin: 0;
+    }
+
+    .galeria {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      background-color: #9dd9ff;
+      padding: 10px 0;
+    }
+
+    .galeria img {
+      width: 200px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    form {
+      background-color: #a5f3fc;
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 400px;
+      margin: 30px auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+
+    .error {
+      color: red;
+      font-size: 0.9em;
+    }
+
+    input.valid {
+      border: 2px solid green;
+    }
+
+    input.invalid {
+      border: 2px solid red;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      width: 100%;
+      font-weight: bold;
+    }
+
+    .video-esquina {
+      position: fixed;
+      width: 500px;
+      height: 400px;
+      z-index: 10;
+      border-radius: 10px;
+    }
+
+    #video-izquierda {
+      bottom: 50px;
+      left: 10px;
+    }
+
+    #video-derecha {
+      bottom: 50px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>REGISTRO DE BENEFICIARIOS DE PLANTAS FRUTALES</h1>
+
+  <div class="galeria">
+    <img src="descarga (1).jfif" alt="Fruta 1">
+    <img src="descarga (2).jfif" alt="Fruta 2">
+    <img src="descarga (3).jfif" alt="Fruta 3">
+    <img src="descarga (4).jfif" alt="Fruta 4">
+    <img src="descarga (5).jfif" alt="Fruta 5">
+  </div>
+<section class="clases-plantas">
+  <h2 style="text-align: center; color: #2c3e50;">Clases de Plantas Frutales</h2>
+  <div class="plantas-lista">
+    <ul>
+      <li><strong>Cítricos:</strong> Naranja, limón, mandarina</li>
+      <img src="naranja.jfif" alt="">
+      <img src="limon.jfif" alt="">
+      <img src="mandarina.jfif" alt="">
+      <li><strong>Frutas tropicales:</strong> Mango, papaya, maracuyá</li>
+      <img src="mango,maraculla,papalla.jfif" alt="">
+      <li><strong>Frutas de clima templado:</strong> Manzana, pera, durazno</li>
+      <img src="manzana.jfif" alt="">
+      <img src="pera.jfif" alt="">
+      <img src="durasno.jfif" alt="">
+      <li><strong>Frutas exóticas:</strong> Pitahaya, guanábana, níspero</li>
+      <img src="pitajalla.jfif" alt="">
+      <img src="guanabana.jfif" alt="">
+      <img src="nispero.jfif" alt="">
+      <li><strong>Frutas de arbusto:</strong> Mora, frambuesa, arándano</li>
+      <img src="mora.jfif" alt="">
+      <img src="frambruesa.jfif" alt="">
+      <img src="arandanos.jfif" alt="">
+    </ul>
+  </div>
+</section>
+<h2>UBICACION</h2>
+<img src="Imagen1.png" alt="">
+ <img src="Imagen1.png" alt=""> <form id="registroForm">
+
+                   <h2 style="text-align: center;">Formulario de Registro</h2>
+
+    <label>Nombre:</label>
+    <input type="text" id="nombre" required />
+    <small class="error" id="errorNombre"></small>
+
+    <label>Correo Electrónico:</label>
+    <input type="email" id="correo" required />
+    <small class="error" id="errorCorreo"></small>
+
+    <label>Contraseña:</label>
+    <input type="password" id="contrasena" required />
+    <small class="error" id="errorContrasena"></small>
+
+    <label>Confirmar Contraseña:</label>
+    <input type="password" id="confirmarContrasena" required />
+    <small class="error" id="errorConfirmar"></small>
+
+    <label>Edad:</label>
+    <input type="number" id="edad" required />
+    <small class="error" id="errorEdad"></small>
+
+    <button type="submit" id="enviar" disabled>Enviar</button>
+    <button type="reset">Reiniciar</button>
+  </form>
+
+  <!-- Videos en esquinas -->
+  <iframe id="video-izquierda"class="video-izquierda"
+    src="https://www.youtube.com/embed/gREprELHvDU?autoplay=1&mute=1&loop=1&playlist=gREprELHvDU" 
+    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+  </iframe>
+
+  <iframe id="video-derecha" class="video-esquina" 
+    src="https://www.youtube.com/embed/2yjYZijFTwI?autoplay=1&mute=1&loop=1&playlist=2yjYZijFTwI" 
+    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+  </iframe>
+<section class="tabla-requisitos-cuadros">
+  <h2 style="text-align: center; color: #2c3e50;">Requisitos para el Registro</h2>
+  <table class="tabla-cuadros">
+    <thead>
+      <tr>
+        <th>N.º</th>
+        <th>Requisito</th>
+        <th>Descripción Detallada</th>
+        <th>¿Cumple?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Mayoría de edad</td>
+        <td>El beneficiario debe tener mínimo 18 años cumplidos.</td>
+        <td>[  ] Sí &nbsp;&nbsp; [  ] No</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Residencia en la zona</td>
+        <td>Debe vivir en el área de distribución de las plantas.</td>
+        <td>[  ] Sí &nbsp;&nbsp; [  ] No</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Espacio disponible</td>
+        <td>Debe contar con terreno o macetas donde sembrar las plantas.</td>
+        <td>[  ] Sí &nbsp;&nbsp; [  ] No</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Compromiso de cuidado</td>
+        <td>Debe firmar un acuerdo de responsabilidad por el cuidado.</td>
+        <td>[  ] Sí &nbsp;&nbsp; [  ] No</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+  <!-- Validaciones en JavaScript -->
+  <script>
+    const nombre = document.getElementById("nombre");
+    const correo = document.getElementById("correo");
+    const contrasena = document.getElementById("contrasena");
+    const confirmar = document.getElementById("confirmarContrasena");
+    const edad = document.getElementById("edad");
+    const enviar = document.getElementById("enviar");
+
+    const errorNombre = document.getElementById("errorNombre");
+    const errorCorreo = document.getElementById("errorCorreo");
+    const errorContrasena = document.getElementById("errorContrasena");
+    const errorConfirmar = document.getElementById("errorConfirmar");
+    const errorEdad = document.getElementById("errorEdad");
+
+    function validarNombre() {
+      if (nombre.value.trim().length >= 3) {
+        nombre.classList.add("valid");
+        nombre.classList.remove("invalid");
+        errorNombre.textContent = "";
+        return true;
+      } else {
+        nombre.classList.add("invalid");
+        nombre.classList.remove("valid");
+        errorNombre.textContent = "El nombre debe tener al menos 3 caracteres.";
+        return false;
+      }
+    }
+
+    function validarCorreo() {
+      const regex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+      if (regex.test(correo.value)) {
+        correo.classList.add("valid");
+        correo.classList.remove("invalid");
+        errorCorreo.textContent = "";
+        return true;
+      } else {
+        correo.classList.add("invalid");
+        correo.classList.remove("valid");
+        errorCorreo.textContent = "Correo electrónico inválido.";
+        return false;
+      }
+    }
+
+    function validarContrasena() {
+      const regex = /^(?=.*[0-9])(?=.*[!@#\\$%\\^&\\*])/;
+      if (contrasena.value.length >= 8 && regex.test(contrasena.value)) {
+        contrasena.classList.add("valid");
+        contrasena.classList.remove("invalid");
+        errorContrasena.textContent = "";
+        return true;
+      } else {
+        contrasena.classList.add("invalid");
+        contrasena.classList.remove("valid");
+        errorContrasena.textContent =
+          "La contraseña debe tener al menos 8 caracteres, un número y un carácter especial.";
+        return false;
+      }
+    }
+
+    function validarConfirmacion() {
+      if (confirmar.value === contrasena.value && confirmar.value !== "") {
+        confirmar.classList.add("valid");
+        confirmar.classList.remove("invalid");
+        errorConfirmar.textContent = "";
+        return true;
+      } else {
+        confirmar.classList.add("invalid");
+        confirmar.classList.remove("valid");
+        errorConfirmar.textContent = "Las contraseñas no coinciden.";
+        return false;
+      }
+    }
+
+    function validarEdad() {
+      if (parseInt(edad.value) >= 18) {
+        edad.classList.add("valid");
+        edad.classList.remove("invalid");
+        errorEdad.textContent = "";
+        return true;
+      } else {
+        edad.classList.add("invalid");
+        edad.classList.remove("valid");
+        errorEdad.textContent = "Debes ser mayor de 18 años.";
+        return false;
+      }
+    }
+
+    function validarFormulario() {
+      const valido =
+        validarNombre() &&
+        validarCorreo() &&
+        validarContrasena() &&
+        validarConfirmacion() &&
+        validarEdad();
+      enviar.disabled = !valido;
+    }
+
+    nombre.addEventListener("input", validarFormulario);
+    correo.addEventListener("input", validarFormulario);
+    contrasena.addEventListener("input", validarFormulario);
+    confirmar.addEventListener("input", validarFormulario);
+    edad.addEventListener("input", validarFormulario);
+
+    document.getElementById("registroForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("¡Formulario enviado correctamente!");
+    });
+ 
+  </script>
+<footer class="pie-pagina">
+    <div class="footer-menu">
+  <a href="#inicio">Inicio</a>
+  <a href="#formulario">Formulario</a>
+  <a href="#requisitos">Requisitos</a>
+  <a href="#clases">Clases de Plantas</a>
+  <a href="#contacto">0981932387</a>
+  <a href=""></a>
+</div>
+
+    </iframe>
+  </div>
+  <p>© 2025 Registro de Beneficiarios de Plantas Frutales - Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
